@@ -45,18 +45,85 @@ export default {
           800: '#1e293b',
           900: '#0f172a',
           950: '#020617',
+        },
+        jawa: {
+          // ... existing colors ...
+          sage: {
+            50: '#f6f7f4',
+            100: '#e8ebe3',
+            200: '#d1d8c7',
+            300: '#b3bfa3',
+            400: '#94a67e',
+            500: '#7a8f65',
+            600: '#5f7249',
+            700: '#4b5a3a',
+            800: '#3d4930',
+            900: '#333d29',
+            950: '#1a2014',
+          },
+          cream: {
+            50: '#fefdfb',
+            100: '#fdf8f0',
+            200: '#faf0de',
+            300: '#f5e4c6',
+            400: '#edd3a5',
+            500: '#e3be82',
+            600: '#d4a05a',
+            700: '#b8834a',
+            800: '#956a40',
+            900: '#795737',
+            950: '#412c1b',
+          },
+          gold: {
+            50: '#fdfaf3',
+            100: '#f9f0d9',
+            200: '#f2deb0',
+            300: '#e9c77e',
+            400: '#dfab4e',
+            500: '#d4932f',
+            600: '#be7624',
+            700: '#9e5920',
+            800: '#814721',
+            900: '#6b3b1f',
+            950: '#3d1d0e',
+          },
+          // New Colors from AI Template
+          clay: '#8b4e3c',
+          "on-clay": '#ffffff',
+          "clay-container": '#c9826d',
+          "on-clay-container": '#4d1e0f',
+          parchment: {
+            DEFAULT: '#fcf9ef',
+            dim: '#dddad0',
+            variant: '#e5e2d9',
+            container: '#f1eee4',
+            low: '#f7f4e9',
+          },
+          charcoal: {
+            DEFAULT: '#1c1c16',
+            variant: '#46483f',
+          },
         }
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        heading: ['Playfair Display', 'Georgia', 'serif'],
+        body: ['Cormorant Garamond', 'Georgia', 'serif'],
+        script: ['Great Vibes', 'cursive'],
+        // New Fonts from AI Template
+        headline: ['Newsreader', 'serif'],
+        noto: ['Noto Serif', 'serif'],
       },
       boxShadow: {
         'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
         'glow': '0 0 20px rgba(14, 165, 233, 0.15)',
+        'gold-glow': '0 0 25px rgba(212, 147, 47, 0.2)',
       },
       animation: {
         'fade-in': 'fadeIn 0.2s ease-in-out',
         'slide-in': 'slideIn 0.3s ease-out',
+        'fade-up': 'fadeUp 0.8s ease-out forwards',
+        'float': 'float 6s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -66,6 +133,14 @@ export default {
         slideIn: {
           '0%': { transform: 'translateX(-10px)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        fadeUp: {
+          '0%': { transform: 'translateY(40px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-15px)' },
         },
       },
     },

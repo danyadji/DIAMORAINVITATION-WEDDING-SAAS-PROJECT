@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { usePageTitle } from '../contexts/PageTitleContext';
+import { usePageTitle } from '../../../contexts/PageTitleContext';
 import { 
   Card, CardHeader, CardContent, CardFooter,
   Button, Badge, Alert
-} from '../components';
+} from '../../../components';
 
 const CAPTION_PRESETS = [
   {

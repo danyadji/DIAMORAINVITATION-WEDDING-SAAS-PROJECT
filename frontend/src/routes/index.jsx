@@ -1,21 +1,28 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { DashboardLayout } from '../layouts';
 import { 
   LoginPage, 
-  MagicLoginPage, 
+  MagicLoginPage
+} from '../pages';
+import {
+  DashboardLayout,
   DashboardHome, 
   GuestListPage,
   EditInvitationPage,
   SendInvitationPage,
   RSVPManagementPage,
   PlaceholderPage 
-} from '../pages';
+} from '../features/dashboard';
 import { ProtectedRoute, PublicRoute } from './guards';
+import { JawaKlasikTemplate } from '../features/invitations';
+import LandingPage from '../features/landing-page';
+
 
 export default function AppRoutes() {
   return (
     <Routes>
       {/* Public Routes */}
+      <Route path="/" element={<LandingPage />} />
+
       <Route 
         path="/login" 
         element={
@@ -26,9 +33,12 @@ export default function AppRoutes() {
       />
       <Route path="/auth/magic-login" element={<MagicLoginPage />} />
 
+      {/* Public Invitation Template */}
+      <Route path="/invitation/:slug" element={<JawaKlasikTemplate />} />
+
       {/* Protected Dashboard Routes */}
       <Route
-        path="/"
+        path="/dashboard"
         element={
           <ProtectedRoute>
             <DashboardLayout>
@@ -119,7 +129,7 @@ export default function AppRoutes() {
       />
 
       {/* 404 */}
-      <Route path="*" element={<Navigate to="/" replace />} />
+      <Route path="*" element={<Navigate to="/dashboard" replace />} />
     </Routes>
   );
 }

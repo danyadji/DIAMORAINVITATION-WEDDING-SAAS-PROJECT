@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { usePageTitle } from '../contexts/PageTitleContext';
-// import { useAuth } from '../hooks'; // TEMP: Commented for testing UI
+import { usePageTitle } from '../../../contexts/PageTitleContext';
+// import { useAuth } from '../../../hooks'; // TEMP: Commented for testing UI
 
 const menuItems = [
   { path: '/', label: 'Dashboard', icon: 'home' },

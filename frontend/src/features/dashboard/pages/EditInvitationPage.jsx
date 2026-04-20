@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { usePageTitle } from '../contexts/PageTitleContext';
+import { usePageTitle } from '../../../contexts/PageTitleContext';
 import { 
   Card, CardHeader, CardContent, CardFooter,
   Button, Input, Select, Stepper, Badge
-} from '../components';
+} from '../../../components';
 
 const STEPS = ['Info Dasar', 'Detail Acara', 'Tema'];
 const THEMES = [

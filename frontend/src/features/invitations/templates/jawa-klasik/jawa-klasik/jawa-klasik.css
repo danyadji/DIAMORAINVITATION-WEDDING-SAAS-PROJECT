@@ -1,0 +1,27 @@
+/* Custom styles for Jawa Klasik Template */
+
+.font-headline {
+  font-family: 'Newsreader', serif;
+}
+
+.font-body {
+  font-family: 'Cormorant Garamond', 'Noto Serif', serif;
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-noto {
+  font-family: 'Noto Serif', serif;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}

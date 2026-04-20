@@ -1,1 +1,1 @@
-export { default as DashboardLayout } from './DashboardLayout';
+// Cleaned up, layout moved to dashboard features

@@ -2,8 +2,8 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { 
   Card, CardHeader, CardContent, CardFooter,
   Badge, Button, Tabs
-} from '../components';
-import { usePageTitle } from '../contexts/PageTitleContext';
+} from '../../../components';
+import { usePageTitle } from '../../../contexts/PageTitleContext';
 
 const RSVP_RESPONSES = [
   { id: 1, guestName: 'Budi Janto', phone: '0812-3456-7890', status: 'yes', numberOfPeople: 2, rsvpDate: '2024-06-15 10:30', notes: 'Membawa istri' },
