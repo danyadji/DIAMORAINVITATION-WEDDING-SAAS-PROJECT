@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../../hooks';
-import { usePageTitle } from '../../../contexts/PageTitleContext';
+import { useAuth } from '../../hooks';
+import { usePageTitle } from '../../contexts/PageTitleContext';
 import { 
   Card, CardHeader, CardContent, CardFooter,
   Badge, StatCard, ActionCard, Button
-} from '../../../components';
+} from '../../components';
 
 export default function DashboardHome() {
   const { user } = useAuth();
@@ -31,7 +31,7 @@ export default function DashboardHome() {
         </CardHeader>
         <CardContent>
           <div className="flex items-center gap-2">
-            <Badge variant={invitationStatus === 'published' ? 'success' : 'warning'}>
+            <Badge variant={invitationStatus === 'published' ? 'success' : 'warning'}>  
               {invitationStatus === 'draft' ? 'Draft - Belum Dipublikasi' : 'Published'}
             </Badge>
           </div>

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
-import { PageLoader, Alert } from '../components';
-import { authService } from '../services';
-import { useAuth } from '../hooks';
+import { PageLoader, Alert } from '../../components';
+import { authService } from '../../services';
+import { useAuth } from '../../hooks';
 
 export default function MagicLoginPage() {
   const [searchParams] = useSearchParams();

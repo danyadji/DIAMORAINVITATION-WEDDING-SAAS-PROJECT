@@ -1,2 +1,3 @@
-export { default as LoginPage } from './LoginPage';
-export { default as MagicLoginPage } from './MagicLoginPage';
+export { default as LoginPage } from './auth/LoginPage';
+export { default as RegisterPage } from './auth/RegisterPage';
+export { default as MagicLoginPage } from './auth/MagicLoginPage';

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { usePageTitle } from '../../../contexts/PageTitleContext';
+import { usePageTitle } from '../../contexts/PageTitleContext';
 
 export default function PlaceholderPage({ title }) {
   const { setTitle } = usePageTitle();

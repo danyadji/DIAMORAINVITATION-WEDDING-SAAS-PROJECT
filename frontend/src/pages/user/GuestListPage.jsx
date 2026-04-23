@@ -1,8 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
-import { usePageTitle } from '../../../contexts/PageTitleContext';
-import { Button, Table, Modal, Input, Select, Alert } from '../../../components';
-import { guestService } from '../../../services';
-import { useAsync } from '../../../hooks';
+import { usePageTitle } from '../../contexts/PageTitleContext';
+import { Button, Table, Modal, Input, Select, Alert } from '../../components';
+import { guestService } from '../../services';
+import { useAsync } from '../../hooks';
 
 const GUEST_CATEGORIES = [
   { value: 'keluarga', label: 'Keluarga' },
