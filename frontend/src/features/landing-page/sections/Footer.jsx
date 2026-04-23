@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -28,16 +29,16 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white mb-6">Produk</h4>
             <ul className="space-y-4 text-sm text-stone-300 tracking-wide">
-              <li><a href="#templates" className="hover:text-[#BC914D] transition-colors">Tema Undangan</a></li>
-              <li><a href="#features" className="hover:text-[#BC914D] transition-colors">Fitur Premium</a></li>
-              <li><a href="#pricing" className="hover:text-[#BC914D] transition-colors">Harga Paket</a></li>
+              <li><Link to="/themes" className="hover:text-[#BC914D] transition-colors">Tema Undangan</Link></li>
+              <li><Link to="/portfolio" className="hover:text-[#BC914D] transition-colors">Portofolio</Link></li>
+              <li><Link to="/pricing" className="hover:text-[#BC914D] transition-colors">Harga Paket</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-bold text-white mb-6">Bantuan</h4>
             <ul className="space-y-4 text-sm text-stone-300 tracking-wide">
-              <li><a href="#faq" className="hover:text-[#BC914D] transition-colors">FAQ</a></li>
+              <li><Link to="/faq" className="hover:text-[#BC914D] transition-colors">FAQ</Link></li>
               <li><a href="#" className="hover:text-[#BC914D] transition-colors">Kontak Kami</a></li>
               <li><a href="#" className="hover:text-[#BC914D] transition-colors">Kebijakan Privasi</a></li>
               <li><a href="#" className="hover:text-[#BC914D] transition-colors">Syarat & Ketentuan</a></li>

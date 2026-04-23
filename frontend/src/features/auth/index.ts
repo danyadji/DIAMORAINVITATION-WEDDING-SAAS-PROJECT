@@ -1,2 +1,2 @@
 // Entry point for auth feature
-export {}
+export { default } from './index.jsx';

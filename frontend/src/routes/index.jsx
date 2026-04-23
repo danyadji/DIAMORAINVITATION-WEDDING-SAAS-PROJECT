@@ -14,14 +14,14 @@ import {
 } from '../features/dashboard';
 import { ProtectedRoute, PublicRoute } from './guards';
 import { JawaKlasikTemplate } from '../features/invitations';
-import LandingPage from '../features/landing-page';
+import HomePage from '../pages/(marketing)/HomePage';
 
 
 export default function AppRoutes() {
   return (
     <Routes>
       {/* Public Routes */}
-      <Route path="/" element={<LandingPage />} />
+      <Route path="/" element={<HomePage />} />
 
       <Route 
         path="/login" 

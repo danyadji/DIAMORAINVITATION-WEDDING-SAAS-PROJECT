@@ -59,43 +59,23 @@ export default function Pricing() {
               <ul className="space-y-4 text-slate-600 text-sm">
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-[#BC914D] text-lg">check_circle</span> 
-                  Akses 10 Tema Premium
+                  Akses 15 Tema Premium
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-[#BC914D] text-lg">check_circle</span> 
-                  Galeri Maks 20 Foto
+                  Galeri Maks 30 Foto & Video
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-[#BC914D] text-lg">check_circle</span> 
-                  Background Music Pilihan
+                  Custom Background Music
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-[#BC914D] text-lg">check_circle</span> 
-                  Masa Aktif 1 Tahun
+                  Fitur Tamu Spesial (Nama Tamu)
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-[#BC914D] text-lg">check_circle</span> 
-                  Masa Aktif 1 Tahun
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#BC914D] text-lg">check_circle</span> 
-                  Masa Aktif 1 Tahun
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#BC914D] text-lg">check_circle</span> 
-                  Masa Aktif 1 Tahun
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#BC914D] text-lg">check_circle</span> 
-                  Masa Aktif 1 Tahun
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#BC914D] text-lg">check_circle</span> 
-                  Masa Aktif 1 Tahun
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="material-symbols-outlined text-[#BC914D] text-lg">check_circle</span> 
-                  Masa Aktif 1 Tahun
+                  Integrasi Google Maps
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-[#BC914D] text-lg">check_circle</span> 

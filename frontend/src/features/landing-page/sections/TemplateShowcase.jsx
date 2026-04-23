@@ -49,25 +49,37 @@ export default function TemplateShowcase() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
           {templates.map((tpl, idx) => (
             <div key={idx} className="group">
-              <Card className="border-0 shadow-none bg-transparent flex flex-col items-center">
-                <div className="relative w-4/5 aspect-[3/4] rounded-2xl overflow-hidden mb-6 bg-slate-200 shadow-md">
+              <Card className="border-0 bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col">
+                <div className="relative aspect-[3/4] overflow-hidden bg-slate-100">
                   <img 
                     src={tpl.image} 
                     alt={tpl.title} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
-                  <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <Button className="bg-white text-slate-900 hover:bg-[#BC914D] hover:text-white border-0 font-bold px-8">
-                      Preview
-                    </Button>
+                  <div className="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4">
+                     <span className="bg-white/90 backdrop-blur-md text-slate-900 text-[10px] md:text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                       Lihat Detail
+                     </span>
                   </div>
                 </div>
-                <CardContent className="p-0 text-center">
-                  <h3 className="text-xl font-serif font-bold text-slate-900 mb-1">{tpl.title}</h3>
-                  <p className="text-sm text-slate-500">{tpl.desc}</p>
+                <CardContent className="p-3 md:p-5 flex flex-col flex-1">
+                  <h3 className="text-sm md:text-xl font-serif font-bold text-slate-900 mb-1 line-clamp-1 group-hover:text-[#BC914D] transition-colors">{tpl.title}</h3>
+                  <p className="text-[10px] md:text-sm text-slate-500 mb-4 line-clamp-1">{tpl.desc}</p>
+                  
+                  <div className="flex flex-col md:flex-row gap-2 mt-auto">
+                    <Button
+                      variant="secondary"
+                      className="flex-1 py-1 px-2 md:py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-900 text-[10px] md:text-xs h-7 md:h-9"
+                    >
+                      Preview
+                    </Button>
+                    <Button className="flex-1 py-1 px-2 md:py-2.5 bg-[#BC914D] hover:bg-[#a37d42] text-white text-[10px] md:text-xs h-7 md:h-9">
+                      Gunakan
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </div>

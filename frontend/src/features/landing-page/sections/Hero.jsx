@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '../../../components/ui/button';
 
-import heroMockup from '../assets/hero-mockup.png';
+import heroMockup from '../assets/01-o-removebg-preview.png';
 
 export default function Hero() {
   return (
