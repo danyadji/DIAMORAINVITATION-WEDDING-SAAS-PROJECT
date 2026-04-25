@@ -1,13 +1,11 @@
-import React from 'react';
-import BlankLayout from '../layouts/BlankLayout';
+// 1. Import komponen temanya
+import JawaKlasikTemplate from '../features/invitations/templates/jawa-klasik/JawaKlasikTemplate';
 
 export default function ThemePreview() {
   return (
-    <BlankLayout>
-      <div className="flex items-center justify-center min-h-screen bg-slate-900 text-white">
-        <h1 className="text-3xl font-bold">Theme Preview Rendering...</h1>
-        {/* Placeholder for dynamic theme components */}
-      </div>
-    </BlankLayout>
+    <div className="w-full min-h-screen bg-gray-100">
+      {/* 2. Panggil komponennya di sini */}
+      <JawaKlasikTemplate />
+    </div>
   );
 }
